@@ -13,9 +13,9 @@ cask "crucible" do
   desc "Burp Suite for LLMs: intercepting proxy + jailbreak/IPI attack engine"
   homepage "https://basanos.io/"
 
-  # Universal (arm64 + x86_64) build. eframe/egui floor is conservative here;
-  # raise if a newer API is adopted. Bare symbol = "this version or newer".
-  depends_on macos: :big_sur
+  # Universal (arm64 + x86_64) build. Casks are macOS-only; Big Sur is below
+  # Homebrew's supported floor, so a minimum is redundant — just require macOS.
+  depends_on :macos
 
   app "Crucible.app"
 
