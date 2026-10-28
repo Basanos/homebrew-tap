@@ -11,11 +11,11 @@ cask "crucible" do
       verified: "basanos.io/"
   name "Crucible"
   desc "Burp Suite for LLMs: intercepting proxy + jailbreak/IPI attack engine"
-  homepage "https://basanos.io"
+  homepage "https://basanos.io/"
 
   # Universal (arm64 + x86_64) build. eframe/egui floor is conservative here;
-  # raise if a newer API is adopted.
-  depends_on macos: ">= :big_sur"
+  # raise if a newer API is adopted. Bare symbol = "this version or newer".
+  depends_on macos: :big_sur
 
   app "Crucible.app"
 
