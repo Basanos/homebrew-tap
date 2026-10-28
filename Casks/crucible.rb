@@ -13,8 +13,10 @@ cask "crucible" do
   desc "Burp Suite for LLMs: intercepting proxy + jailbreak/IPI attack engine"
   homepage "https://basanos.io/"
 
-  # Universal (arm64 + x86_64) build. Casks are macOS-only; Big Sur is below
-  # Homebrew's supported floor, so a minimum is redundant — just require macOS.
+  # Universal (arm64 + x86_64) build. The app's real floor is macOS 12.0
+  # (Info.plist LSMinimumSystemVersion), which macOS enforces at launch. A
+  # numeric depends_on is redundant here — Homebrew's own supported-macOS floor
+  # is already >= that — so just require macOS and let the bundle gate the rest.
   depends_on :macos
 
   app "Crucible.app"
