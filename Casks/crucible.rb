@@ -20,15 +20,4 @@ cask "crucible" do
   depends_on :macos
 
   app "Crucible.app"
-
-  caveats <<~EOS
-    Crucible is not yet notarized or Developer-ID signed, so on first launch
-    macOS Gatekeeper will refuse to open it. To clear the quarantine flag:
-
-      xattr -dr com.apple.quarantine "#{appdir}/Crucible.app"
-
-    or right-click Crucible in Finder and choose Open, then confirm once.
-
-    Signing/notarization is a planned follow-up; this caveat goes away then.
-  EOS
 end
