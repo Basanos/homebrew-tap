@@ -1,6 +1,6 @@
 cask "crucible" do
-  version "0.9.7"
-  sha256 "ca72f2f34537f12f0f29d4c23b7a2bf96a4531fba8a8f699eda1447d8a37bbba"
+  version "0.9.8"
+  sha256 "b11715720497aa9fc806db802668cc4f2b4946814cf417f7ab9c7a1c2c204221"
 
   # Public download URL served by the Basanos download Worker (never the private
   # GitHub release asset, which is auth-gated). Version-PINNED route so url+sha256
