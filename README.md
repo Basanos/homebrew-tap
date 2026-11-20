@@ -4,8 +4,9 @@ Homebrew tap for [Basanos](https://basanos.io) tools.
 
 ## Crucible
 
-Crucible — "Burp Suite for LLMs": an intercepting proxy and jailbreak/IPI
-attack engine for red-teaming AI systems.
+Crucible is an intercepting proxy and attack suite for red-teaming AI systems.
+It sits between your application and the model API it calls, so you can capture,
+modify and replay that traffic.
 
 ```sh
 brew install --cask basanos/tap/crucible

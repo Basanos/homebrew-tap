@@ -10,7 +10,7 @@ cask "crucible" do
   url "https://basanos.io/download/crucible/#{version}/macos",
       verified: "basanos.io/"
   name "Crucible"
-  desc "Burp Suite for LLMs: intercepting proxy + jailbreak/IPI attack engine"
+  desc "Intercepting proxy and attack suite for testing LLM applications"
   homepage "https://basanos.io/"
 
   # Universal (arm64 + x86_64) build. The app's real floor is macOS 12.0
